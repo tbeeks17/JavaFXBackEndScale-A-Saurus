@@ -1,13 +1,11 @@
 module com.scaleasaurus {
     requires javafx.controls;
     requires javafx.fxml;
-    requires json.simple;
 
-    opens com.scaleasaurus to javafx.fxml;
-    exports com.scaleasaurus;
-
-    opens model to javafx.fxml;
-    exports model;
-
+    opens com.controllers to javafx.fxml; 
+    opens com.model to javafx.fxml;
     
+    exports com;
+    exports com.controllers;
+    exports com.model;
 }
